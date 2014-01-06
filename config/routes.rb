@@ -1,4 +1,6 @@
 CongressgameApp::Application.routes.draw do
+  get "user/index"
+  get "politicans/index"
   root "game#index"
   get "game", to: 'game#index'
   get "game/congressman", to: "game#congressman"
