@@ -1,5 +1,8 @@
 CongressgameApp::Application.routes.draw do
-  get "game/index"
+  root "game#index"
+  get "game", to: 'game#index'
+  get "game/congressman", to: "game#congressman"
+  get "game/congressman/:challenge", to: "game#congressman_challenge"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
