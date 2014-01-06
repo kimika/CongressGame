@@ -1,10 +1,12 @@
 CongressgameApp::Application.routes.draw do
-  get "user/index"
-  get "politicans/index"
-  root "game#index"
+
+  devise_for :users
+  root :to => 'game#index'
+  
   get "game", to: 'game#index'
-  get "game/congressman", to: "game#congressman"
-  get "game/congressman/:challenge", to: "game#congressman_challenge"
+  get "user", to: 'user#index'
+  get "politicans", to: 'politicians#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

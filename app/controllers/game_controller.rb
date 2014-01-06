@@ -1,7 +1,9 @@
 class GameController < ApplicationController
+  
   def index
     @games = ["Challenge Your Congressman"]
   end
+
   def congressman
     @congressman = ["Congressman_ID"]
   end
@@ -10,4 +12,5 @@ class GameController < ApplicationController
     @app_challenge = [*congressman].sample
     @user_challenge = params[:congressman]. to_i
   end
+  
 end
