@@ -37,6 +37,7 @@ gem 'jbuilder', '~> 1.2'
 
 group :development do
   gem 'rails_layout'
+  gem 'pry-rails'
 end
 
 group :doc do
