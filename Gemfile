@@ -7,8 +7,10 @@ gem 'rails', '4.0.2'
 gem 'sqlite3'
 gem 'smarter_csv'
 gem 'devise'
-gem "sunlight-congress", "~> 1.1.0"
-gem 'congress'
+
+gem 'rest-client'
+
+# gem 'congress' THIS THE SQUISHY WAY
 
 gem 'bootstrap-sass'
 
