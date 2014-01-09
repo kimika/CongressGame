@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 gem 'smarter_csv'
 gem 'devise'
 
@@ -38,6 +38,12 @@ gem 'jbuilder', '~> 1.2'
 group :development do
   gem 'rails_layout'
   gem 'pry-rails'
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 group :doc do
