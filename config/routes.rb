@@ -7,10 +7,10 @@ CongressgameApp::Application.routes.draw do
   get "users", to: 'user#index'
   get "politicans", to: 'politician#index'
 
-  resources :games
-  resources :politicians
-  resources :questions
-  resources :answers
+  # resources :games
+  # resources :politicians
+  # resources :questions
+  # resources :answers
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
