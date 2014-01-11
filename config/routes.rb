@@ -3,9 +3,14 @@ CongressgameApp::Application.routes.draw do
   devise_for :users
   root :to => 'game#index'
   
-  get "game", to: 'game#index'
-  get "user", to: 'user#index'
-  get "politicans", to: 'politicians#index'
+  get "games", to: 'game#index'
+  get "users", to: 'user#index'
+  get "politicans", to: 'politician#index'
+
+  resources :games
+  resources :politicians
+  resources :questions
+  resources :answers
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
