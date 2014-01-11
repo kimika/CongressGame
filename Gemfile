@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'ruby', '2.0.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
@@ -7,6 +7,7 @@ gem 'rails', '4.0.2'
 
 gem 'smarter_csv'
 gem 'devise'
+gem 'simple_form'
 
 gem 'rest-client'
 
