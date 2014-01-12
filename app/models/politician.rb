@@ -1,4 +1,7 @@
 class Politician < ActiveRecord::Base  
+  belongs_to :games
+  has_many :questions
+  has_many :answers
 end
 #   belongs_to :users
 #   end
