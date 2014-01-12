@@ -1,7 +1,7 @@
 CongressgameApp::Application.routes.draw do
 
   devise_for :users
-  root :to => 'user#index'
+  root :to => "welcome/index"
   
   get "users", to: 'user#index'
   get "politicans", to: 'politician#index'
@@ -12,7 +12,7 @@ CongressgameApp::Application.routes.draw do
   # resources :answers
 
   # The priorityexit
-   is based upon order of creation: first created -> highest priority.
+   # is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
