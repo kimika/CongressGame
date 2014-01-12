@@ -4,7 +4,7 @@ CongressgameApp::Application.routes.draw do
   root "welcome#index"
 
   get "games", to: 'game#index'
-  get "politicans", to: 'politician#index'
+  get "politicians", to: 'politician#index'
 
   namespace :games do
   resources :answers, :questions, :politicians
