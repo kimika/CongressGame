@@ -9,5 +9,4 @@ class PoliticansController < ApplicationController
   end
 
 
-
 end

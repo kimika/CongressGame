@@ -1,31 +1,13 @@
 CongressgameApp::Application.routes.draw do
 
   devise_for :users
-  root :to => "welcome#index"
-  
-  get "users", to: 'user#index'
+  root "welcome#index"
+
+  get "games", to: 'game#index'
   get "politicans", to: 'politician#index'
 
-  # resources :games
-  # resources :politicians
-  # resources :questions
-  # resources :answers
-
-  # The priorityexit
-   # is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
-
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
-
-  # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
-
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+  namespace :games do
+  resources :answers, :questions, :politicians
 
   # Example resource route with options:
   #   resources :products do
@@ -66,4 +48,5 @@ CongressgameApp::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+end
 end
