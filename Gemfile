@@ -8,11 +8,11 @@ gem 'rails', '4.0.2'
 gem 'smarter_csv'
 gem 'devise'
 gem 'simple_form'
-
 gem 'rest-client'
 
 # gem 'congress' THIS THE SQUISHY WAY
 
+gem 'trivia', "~> 0.1.4"
 
 
 # Use SCSS for stylesheets

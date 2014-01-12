@@ -1,4 +1,3 @@
 class Question < ActiveRecord::Base
-  belongs_to :games
-  has_one :answers
+  include Trivia::Question
 end
