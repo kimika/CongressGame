@@ -13,6 +13,7 @@ gem 'rest-client'
 # gem 'congress' THIS THE SQUISHY WAY
 
 gem 'trivia', "~> 0.1.4"
+gem 'protected_attributes'
 
 
 # Use SCSS for stylesheets

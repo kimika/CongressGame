@@ -14,3 +14,24 @@ politicians.each do |politician|
   )
 end
 
+questions.each do |question|
+  Question.create(
+    question:“Who was John Quincy Adams” 
+    question:“What was a primary purpose of the Constitution?”
+  )
+end
+
+answers.each do |answer|
+  Answer.create(
+    answer:“The 6th President of the United States”
+    answer:“A Founding Father of the United States”
+    answer:“Neither”
+    answer:“Both”
+    answer:“True”
+    answer:“False”
+    answer:“To create a centralized, federal government”
+    answer:“To empower state governments”
+    )  
+end
+
+end
