@@ -11,30 +11,29 @@
   <div class="row clearfix">
     <div class="col-md-12 column">
       <h2>
-        The Challenge
+        The Challenge 
+        <p>Multiple Choice Goes here, answer will appear after user selects answer<% link_to "Question", root_path, class: 'Question' %>
+        </p>
       </h2>
-      <p>
-        Question:
-      </p>
     </div>
   </div>
   <div class="row clearfix">
     <div class="col-md-6 column">
       <img alt="140x140" src="http://lorempixel.com/140/140/" />
       <h2>
-        You
+        <%= link_to "User", root_path, class: 'user' %>
       </h2>
       <p>
-        Your Stats
+        <%= link_to "User_Score", root_path, class: 'User' %>
       </p>
     </div>
     <div class="col-md-6 column">
       <img alt="140x140" src="http://lorempixel.com/140/140/" />
       <h2>
-        Representative 
+        <%= link_to "Congressman", root_path, class: 'Congressman' %>
       </h2>
       <p>
-        Challenger Stats
+        <%= link_to "Representative_Stats", root_path, class: 'Congressman' %>
       </p>
     </div>
   </div>
