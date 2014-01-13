@@ -38,7 +38,7 @@
   </div>
   <div class="row clearfix">
     <div class="col-md-6 column">
-      <img src="Ben_Stein.jpg" alt="User" width="200" height="200" class="img-rounded">
+      <%= link_to(image_tag("Ben_Stein.jpg", class: 'pix'), root_path) %>
       <h2>
         <%= link_to "User", root_path, class: 'user' %>
       </h2>
@@ -47,7 +47,7 @@
       </p>
     </div>
     <div class="col-md-6 column">
-      <img src="Boehner_2.png..." alt="Politician" width="200" height="200" class="img-rounded">
+      <%= link_to(image_tag("Boehner_2.png", class: 'pix'), root_path) %>
       <h2>
         <%= link_to "Congressman", root_path, class: 'Politician' %>
       </h2>
@@ -63,6 +63,5 @@
     </div>
     <div class="col-md-4 column">
     </div>
-  </div>
 </div> 
 </body>
