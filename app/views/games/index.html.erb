@@ -15,6 +15,24 @@
         <p>Multiple Choice Goes here, answer will appear after user selects answer<% link_to "Question", root_path, class: 'Question' %>
         </p>
       </h2>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="">
+      Answer 1 <%= link_to Answers %>
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+      Answer 2 <%= link_to Answers %>
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+      Answer 3 <%= link_to Answers %>
+    </label>
+  </div>
     </div>
   </div>
   <div class="row clearfix">
@@ -24,7 +42,7 @@
         <%= link_to "User", root_path, class: 'user' %>
       </h2>
       <p>
-        <%= link_to "User_Score", root_path, class: 'User' %>
+        User Stats <% link_to "User_Score", root_path, class: 'User' %>
       </p>
     </div>
     <div class="col-md-6 column">
@@ -33,7 +51,7 @@
         <%= link_to "Congressman", root_path, class: 'Congressman' %>
       </h2>
       <p>
-        <%= link_to "Representative_Stats", root_path, class: 'Congressman' %>
+        Representative Stats<% link_to "Representative_Stats", root_path, class: 'Congressman' %>
       </p>
     </div>
   </div>
