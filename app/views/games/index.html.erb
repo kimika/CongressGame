@@ -12,25 +12,26 @@
     <div class="col-md-12 column">
       <h2>
         The Challenge 
-        <p>Multiple Choice Goes here, answer will appear after user selects answer<% link_to "Question", root_path, class: 'Question' %>
+        <p>
+          <%= link_to "Question", root_path, class: 'Question' %>
         </p>
       </h2>
   <div class="checkbox">
     <label>
-      <input type="checkbox" value="">
-      Answer 1 <%= link_to Answers %>
-    </label>
-  </div>
-  <div class="radio">
-    <label>
       <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-      Answer 2 <%= link_to Answers %>
+      Answer 1 <%= link_to "Answer", root_path, class: 'answer'  %>
     </label>
   </div>
-  <div class="radio">
+  <div class="checkbox">
     <label>
-      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-      Answer 3 <%= link_to Answers %>
+      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+      Answer 2 <%= link_to "Answer", root_path, class: 'answer'  %>
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+      Answer 3 <%= link_to "Answer", root_path, class: 'answer'  %>
     </label>
   </div>
     </div>
@@ -42,16 +43,16 @@
         <%= link_to "User", root_path, class: 'user' %>
       </h2>
       <p>
-        User Stats <% link_to "User_Score", root_path, class: 'User' %>
+        <%= link_to "User Stats", root_path, class: 'User' %>
       </p>
     </div>
     <div class="col-md-6 column">
       <img alt="140x140" src="http://lorempixel.com/140/140/" />
       <h2>
-        <%= link_to "Congressman", root_path, class: 'Congressman' %>
+        <%= link_to "Congressman", root_path, class: 'Politician' %>
       </h2>
       <p>
-        Representative Stats<% link_to "Representative_Stats", root_path, class: 'Congressman' %>
+        <%= link_to "Representative Stats", root_path, class: 'Politician' %>
       </p>
     </div>
   </div>
