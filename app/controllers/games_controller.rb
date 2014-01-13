@@ -8,6 +8,5 @@ class GamesController < ApplicationController
   #   @politicians = Politician params[id]
   #   @games = Game.new
   # end
-
-
+  end
 end
