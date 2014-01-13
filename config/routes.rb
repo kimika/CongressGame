@@ -3,11 +3,12 @@ CongressgameApp::Application.routes.draw do
   devise_for :users
   root "welcome#index"
 
-  get "games", to: 'game#index'
-  get "politicians", to: 'politician#index'
+  get "game", to: 'games#index'
+  get "politician", to: 'politicians#index'
+  resources :politicians
 
-  namespace :games do
-  resources :answers, :questions, :politicians
+  # namespace :games do
+  # resources :answers, :questions, :politicians
 
   # Example resource route with options:
   #   resources :products do
@@ -48,5 +49,4 @@ CongressgameApp::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
 end
