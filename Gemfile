@@ -5,16 +5,11 @@ gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
 
-gem 'smarter_csv'
 gem 'devise'
 gem 'simple_form'
 gem 'rest-client'
 
 # gem 'congress' THIS THE SQUISHY WAY
-
-gem 'trivia', "~> 0.1.4"
-gem 'protected_attributes'
-
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
